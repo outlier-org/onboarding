@@ -23,7 +23,7 @@ Line length should be limited to 80 characters.
   * External (`package.json`) dependencies (e.g. `require('http')`)
   * Internal dependencies (e.g. `require('./api')`)
   * Constants and other setup needed before `module.exports`
-  * `module.exports`: either a single function or a "catalog object" (e.g. `module.exports = { method1, method2, ... })
+  * `module.exports`: either a single function or a "catalog object" (e.g. `module.exports = { method1, method2, ... }`)
   * Use function hoisting to control the placement of your functions so that important, high-level functions are at the top of the file, and small utility functions are at the bottom.
 * Use descriptive variable names. Function names should be a verb like `route()` or verb combined with a noun like `routeRequest()`.
 * Keep your functions short. If your function is over 40 lines, you should have a good reason.
