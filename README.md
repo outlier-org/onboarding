@@ -1,5 +1,7 @@
 ![Outlier.org](https://i.imgur.com/vJowpL1.png)
 
+---
+
 # Engineering Onboarding Guide
 
 Hey there! You're probably reading this because you've been invited to take one of our code challenges or are working on an Outlier engineering project. Welcome!
