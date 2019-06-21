@@ -48,3 +48,12 @@ All PRs must be reviewed by a teammate before they are eligle to be merged into 
 * Use [Conventional Commits](https://www.conventionalcommits.org)
 * Do not mix feature changes (added functionality) with fixes (restored functionality), refactors (no change in functionality), or style changes (only whitespace or other cosmetic changes).
 * Do not modify a project's `.gitignore` to add files related to your editor or environment. Use your own [global .gitignore](https://stackoverflow.com/questions/7335420/global-git-ignore/22885996#22885996) for that instead.
+
+## Workflow
+
+We use Zenhub to manage our workflow. Each task is represented by an issue. As tasks near completion it moves from "Backlog" to "In Progress" to "Needs Review" to "Ready to Deploy".
+
+Backlog: This is where you will choose from issues to work on. Once you have selected one, move it to "In Progress"
+In Progress: While you are working on an issue, it should stay in this column. Once you are finished and satisfied with your work, move it to "Needs Review"
+Needs Review: Each day you should be looking at this column for PRs to review. This column will list all issues that are complete and are waiting on review before they can be ready for deploy. Once a PR has been successfully reviewed and is ready to be deployed to production, it should be moved to "Ready To Deploy"
+Ready To Deploy: After an issue is finished and has been reviewed and approved by a teammate, it will moved to this column. After it has been deployed, it will be moved to the "Live" column.
