@@ -51,7 +51,9 @@ All PRs must be reviewed by a teammate before they are eligle to be merged into 
 
 ## Workflow
 
-We use Zenhub to manage our workflow. Each task is represented by an issue. As tasks near completion it moves from "Backlog" to "In Progress" to "Needs Review" to "Ready to Deploy".
+We use Zenhub to manage our workflow. Each task is represented by an issue. Be sure to connect any PR you are working on to the appropriate issue. This can be done via the interface or adding language like `Closes #X` where `X` is the issue number.
+
+As tasks near completion it moves from "Backlog" to "In Progress" to "Needs Review" to "Ready to Deploy".
 
 * Backlog: This is where you will choose from issues to work on. Once you have selected one, move it to "In Progress"
 In Progress: While you are working on an issue, it should stay in this column. Once you are finished and satisfied with your work, move it to "Needs Review"
