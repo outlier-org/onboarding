@@ -47,6 +47,7 @@ All PRs must be reviewed by a teammate before they are eligle to be merged into 
 * The project must be operational and have all tests passing after every commit.
 * Use [Conventional Commits](https://www.conventionalcommits.org)
 * Do not mix feature changes (added functionality) with fixes (restored functionality), refactors (no change in functionality), or style changes (only whitespace or other cosmetic changes).
+* Before a PR is ready for review, make sure that it is a single commit. If the combined commit is too large or disparate, consider multiple PRs.
 * Do not modify a project's `.gitignore` to add files related to your editor or environment. Use your own [global .gitignore](https://stackoverflow.com/questions/7335420/global-git-ignore/22885996#22885996) for that instead.
 
 ## Workflow
