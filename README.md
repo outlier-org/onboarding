@@ -23,12 +23,12 @@ Line length should be limited to 80 characters.
 * Code should be as simple, explicit, and as easy to understand as possible.
 * Functional style is preferred to OOP. When possible functions should be pure and not rely on shared state or side effects.
 * Avoid large frameworks; use small modules that are easy to understand.
-* Modules should be structured so that they can be understood easily when skimmed. Use this order:
-  * External (`package.json`) dependencies (e.g. `require('http')`)
-  * Internal dependencies (e.g. `require('./api')`)
-  * Constants and other setup needed before `module.exports`
-  * `module.exports`: either a single function or a "catalog object" (e.g. `module.exports = { method1, method2, ... }`)
-  * Use function hoisting to control the placement of your functions so that important, high-level functions are at the top of the file, and small utility functions are at the bottom.
+* Modules must use this order so that they can be understood quickly when skimmed:
+  1. External dependencies: anything listed in `package.json`, e.g. `require('http')`
+  2. Internal dependencies: any files created in the project itself, e.g. `require('./api')`
+  3. Constants and other setup: this in cludes anything *absolutely necessary* to be defined before `module.exports`
+  4. Exports: the module should export either a single function or a "catalog object", e.g. `module.exports = { method1, method2, ... }`
+  5. Functions: these go after the above sections. Use function hoisting to control the placement of your functions so that important, high-level functions are above smaller more-general utility functions.
 * Use descriptive variable names. Function names should be a verb like `route()` or verb combined with a noun like `routeRequest()`.
 * Keep your functions short. If your function is over 40 lines, you should have a good reason.
 * Functions should not accept more than 3 arguments. Use a single options object if you need more arguments.
