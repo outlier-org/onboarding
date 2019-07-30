@@ -53,7 +53,7 @@ All PRs must be reviewed by a teammate before they are eligle to be merged into 
 
 ## Workflow
 
-We use Zenhub to manage our workflow. Each task is represented by an issue. Be sure to connect any PR you are working on to the appropriate issue. This can be done via the interface or adding language like `Closes #X` where `X` is the issue number.
+We use Zenhub to manage our workflow. Each task is represented by an issue. Be sure to connect any PR you are working on to the appropriate issue. Do this via the Zenhub interface **and** by adding `Closes #X` where `X` is the issue number to the PR description in Github.
 
 As tasks move from **Backlog** to **In Progress** to **Needs Review** to **Ready to Deploy** and finally to **Closed**.
 
