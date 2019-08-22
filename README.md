@@ -26,8 +26,8 @@ Line length should be limited to 80 characters.
 * Modules must use this order so that they can be understood quickly when skimmed:
   1. External dependencies: anything listed in `package.json`, e.g. `require('http')`
   2. Internal dependencies: any files created in the project itself, e.g. `require('./api')`
-  3. Constants and other setup: this in cludes anything *absolutely necessary* to be defined before `module.exports`
-  4. Exports: the module should export either a single function or a "catalog object", e.g. `module.exports = { method1, method2, ... }`
+  3. Constants and other setup: this includes anything *absolutely necessary* to be defined before `module.exports`
+  4. Exports: `module.exports` should be as close to the beginning of the file as possible. The module should export either a single function or a "catalog object", e.g. `module.exports = { method1, method2, ... }`
   5. Functions: these go after the above sections. Use function hoisting to control the placement of your functions so that important, high-level functions are above smaller more-general utility functions.
 * Use descriptive variable names. Function names should be a verb like `route()` or verb combined with a noun like `routeRequest()`.
 * Keep your functions short. If your function is over 40 lines, you should have a good reason.
