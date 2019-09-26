@@ -56,11 +56,12 @@ All PRs must be reviewed by a teammate before they are eligle to be merged into 
 
 We use Zenhub to manage our workflow. Each task is represented by an issue. Be sure to connect any PR you are working on to the appropriate issue. Do this via the Zenhub interface **and** by adding `Closes #X` where `X` is the issue number to the PR description in Github.
 
-As tasks move from **Backlog** to **In Progress** to **Needs Review** to **Ready to Deploy** and finally to **Closed**.
+As tasks move from **Backlog** to **In Progress** to **Needs Review** to **Needs QA** to **Ready to Deploy** and finally to **Closed**.
 
 * Backlog: This is where you will choose from issues to work on. Once you have selected one, move it to **In Progress**.
 * In Progress: While you are working on an issue, it should stay in this column. Once you are finished and satisfied with your work, move it to **Needs Review**.
-* Needs Review: **Each day you should be looking at this column for PRs to review.** This column will list all issues that are complete and are waiting on review before they can be ready for deploy. When you review an item, make sure that it follows all of our coding principles and will not cause problems when we deploy it to production. Once a PR has been reviewed, either move it back to **In Progress** or forward to **Ready to Deploy**. Do not allow items to sit in **Needs Review**.
+* Needs Review: **Each day you should be looking at this column for PRs to review.** This column will list all issues that are complete and are waiting on review before they can be ready for deploy. When you review an item, make sure that it follows all of our coding principles and will not cause problems when we deploy it to production. Once a PR has been reviewed, either move it back to **In Progress** or forward to **Needs QA** or **Ready to Deploy**. Do not allow items to sit in **Needs Review**.
+* Needs QA: If the change affects the front-end and can be tested with a deploy preview it should be tested by QA. After successful testing it should be moved to **Ready to Deploy**, but if it is unsatisfactory, it should be moved back to **In Progress**.
 * Ready To Deploy: After an issue is finished and has been reviewed and approved by a teammate, it will be moved to this column. After it has been deployed, it will be moved to the **Closed** column.
 
 ## Commit Types
