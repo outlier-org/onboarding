@@ -34,7 +34,7 @@ Line length should be limited to 80 characters.
 * Functions should not accept more than 3 arguments. Use a single options object if you need more arguments.
 * Keep nesting to a minimum. Use [early returns](https://blog.timoxley.com/post/47041269194/avoid-else-return-early), single-line conditionals, and function calls.
 
-## Git
+## Git & Github
 
 Version control is a project's best source of documentation when done correctly. When trying to understand code it's extremely useful to use `git blame` to find both the PR and the issue associated with that change.
 
@@ -53,6 +53,7 @@ All PRs must be reviewed by a teammate before they are eligle to be merged into 
 * The exception to the above single commit rule is when a PR introduces new packages. Create one extra commit in the same PR for each new package your PR needs.
 * Do not modify a project's `.gitignore` to add files related to your editor or environment. Use your own [global .gitignore](https://stackoverflow.com/questions/7335420/global-git-ignore/22885996#22885996) for that instead.
 * Be sure that your PRs have descriptive names that explain what has been changed. Typically the commit message is sufficient. "Fixes #66" is not.
+* When submitting a PR with UI or visual changes, please add before and after screenshots to the PR. This makes it easy for the reviewer to quickly see what has been done.
 
 ## Workflow
 
