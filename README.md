@@ -91,3 +91,6 @@ Commit types (e.g. `feat`, `fix`, `refactor`, `style`) are important because the
 
 **Style** commits need the least amount of scrutiny. They tend to be very repetive (converting from snake_case to camelCase, standardizing indentation, or changing newlines). These changes will have no functional impact on the code and any existing tests should be sufficient.
 
+## Slack and Communication
+
+All communication about projects should be in #engineering. Do not use direct messages unless you are discussing something private. It is important that all conversations and questions (no matter how small they seem) should be in #engineering. We work as a team and that requires sharing, being transparent, and allowing the whole team to have a chance to answer your questions and to learn from the dialogue.
