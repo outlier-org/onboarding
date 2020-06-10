@@ -44,6 +44,7 @@ All PRs must be reviewed by a teammate before they are eligle to be merged into 
 
 * Never commit passwords, access tokens, or other credentials into version control. If you think you absolutely have to, ask first. If you do this by accident, tell someone immediately.
 * Each commit should be as small and as simple as possible.
+* Write the commit message in the [imperative mood](https://chris.beams.io/posts/git-commit/#imperative).
 * The project must be operational and have all tests passing after every commit.
 * Use [Conventional Commits](https://www.conventionalcommits.org)
   * See the "Commit Types" section below
