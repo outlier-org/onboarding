@@ -29,10 +29,17 @@ Line length should be limited to 80 characters.
   3. Constants and other setup: this includes anything *absolutely necessary* to be defined before `module.exports`
   4. Exports: `module.exports` should be as close to the beginning of the file as possible. The module should export either a single function or a "catalog object", e.g. `module.exports = { method1, method2, ... }`
   5. Functions: these go after the above sections. Use function hoisting to control the placement of your functions so that important, high-level functions are above smaller more-general utility functions.
-* Use descriptive variable names. Function names should be a verb like `route()` or verb combined with a noun like `routeRequest()`.
 * Keep your functions short. If your function is over 40 lines, you should have a good reason.
 * Functions should not accept more than 3 arguments. Use a single options object if you need more arguments.
 * Keep nesting to a minimum. Use [early returns](https://blog.timoxley.com/post/47041269194/avoid-else-return-early), single-line conditionals, and function calls.
+##### Naming Convention
+- Use descriptive variable names. Function names should be a verb like route() or verb combined with a noun like routeRequest().
+- Use meaningful descriptive names, e.g `getUserPosts` instead of `getUserData`.
+- Favor descriptive over concise names, e.g `findUserById` instead of `findUser`.
+- Use consistent names per concept. In a project, function names should be like `getUsers`, `getQuestions` and `getCourses` instead of `getUsers`, `retrieveQuestions` and `returnCourses`.
+- Variable names should be self-descriptive, it shouldn't need a comment for additional documentation.
+- Booleans should have a prefix like is, has, or are to help engineers with identifying booleans easier, e.g `isVisible` instead of `visible`.
+
 
 ## Git & Github
 
