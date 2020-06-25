@@ -63,6 +63,12 @@ All PRs must be reviewed by a teammate before they are eligle to be merged into 
 * Be sure that your PRs have descriptive titles that explain what has been changed. Typically the commit message is sufficient. "Fixes #66" is not.
 * When submitting a PR with UI or visual changes, please add before and after screenshots to the PR. This makes it easy for the reviewer to quickly see what has been done.
 
+## Parent branches
+
+With larger features, it can be tempting to create a parent branch, allowing for us to work on a feature in a "rough draft" state over a period of time. The challenge there is that keeping the parent branch up-to-date with master can be tedious, resulting in work not being merged into the parent branch. To get around this, we have a number options available, depending on the work being done.
+
+To get around the need for a parent branch, put the new work behind a feature flag. This allows for making small incremental changes to a feature, hiding the fact that it is in a "rough draft" state from the users. This can also work if we are updating an existing feature that requires several days of work: create a new component by copying the old component. Once the new component is ready, remove the flag and delete the old component. If you are working on an entirely new view, you may not need the feature flag. The user will only see the view when we link to it from existing UI. Until that happens, we can merge work into master without having to worry about making sure the feature is "complete".
+
 ## Workflow
 
 We use Zenhub to manage our workflow. Each task is represented by an issue. Be sure to connect any PR you are working on to the appropriate issue. Do this via the Zenhub interface **and** by adding `Closes #X` where `X` is the issue number to the PR description in Github.
