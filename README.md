@@ -43,6 +43,8 @@ Line length should be limited to 80 characters.
 
 ## Git & Github
 
+Create an `Outlier engineering` GitHub profile. The suggested username format is to `{name}-outlier`. Make sure your profile has an image.
+
 Version control is a project's best source of documentation when done correctly. When trying to understand code it's extremely useful to use `git blame` to find both the PR and the issue associated with that change.
 
 PRs should be small and focused. Each commit should solve a single problem and be covered by a test that exemplifies that particular feature or fix.
@@ -73,8 +75,11 @@ To get around the need for a parent branch, put the new work behind a feature fl
 
 We use Zenhub to manage our workflow. Each task is represented by an issue. Be sure to connect any PR you are working on to the appropriate issue. Do this via the Zenhub interface **and** by adding `Closes #X` where `X` is the issue number to the PR description in Github.
 
-As tasks move from **Backlog** to **In Progress** to **Needs Review** to **Needs QA** to **Ready to Deploy** and finally to **Closed**.
+Every ticket and PR must have the appropriate `dev-group-*` label. Labels help easy filtering of tickets in ZenHub. Make sure to add other appropriate labels as well to your tickets and PRs.
 
+As tasks move from **New Issues** to **Backlog** to **In Progress** to **Needs Review** to **Needs QA** to **Ready to Deploy** and finally to **Closed**.
+
+* New Issues: We use New Issues as a place to put a ticket that is still being prepared by the person who created it. Anything in New Issues is technically not ready to be worked on. If you are creating the ticket, make sure to move it to **Backlog** when it is ready to be worked on.
 * Backlog: This is where you will choose from issues to work on. Once you have selected one, move it to **In Progress**.
 * In Progress: While you are working on an issue, it should stay in this column. Once you are finished and satisfied with your work, move it to **Needs Review**.
 * Needs Review: **Each day you should be looking at this column for PRs to review.** This column will list all issues that are complete and are waiting on review before they can be ready for deploy. When you review an item, make sure that it follows all of our coding principles and will not cause problems when we deploy it to production. Once a PR has been reviewed, either move it back to **In Progress** or forward to **Needs QA** or **Ready to Deploy**. Do not allow items to sit in **Needs Review**.
