@@ -40,6 +40,98 @@ Line length should be limited to 80 characters.
 - Variable names should be self-descriptive, it shouldn't need a comment for additional documentation.
 - Booleans should have a prefix like is, has, or are to help engineers with identifying booleans easier, e.g `isVisible` instead of `visible`.
 
+##### Responsive Web Design Standards
+  - Use styled-components throughout the project for making RWD.
+
+  - We are using bootstrap v.4.1.3. So use pre-built classes that comes up with bootstrap v.4. We don't need to create styled-components for applying just those style properties.
+  
+    Here is the cheatsheet for that: https://hackerthemes.com/bootstrap-cheatsheet/
+    
+    ```HTML
+    <span className='d-flex justify-content-between align-items-center'></span>
+    ```
+
+  - We have pre-defined configuration color variables that's placed in `bootstrap-theme.css` file.
+
+    ```JS
+    --teal: #20c997;
+    --dark-black: #151518;
+    ```
+    Use those variables instead of putting hardcoded color values everywhere.
+
+    ```JS
+    export const Footer = styled.footer`
+      background-color: var(--dark-black);
+    `
+    ```
+
+  - Currently we are applying media-queries for the same device breakpoints in pixel values repeatedly in our codebase like `@media (min-width: 576px)`.
+  
+    Onwards, we will be using a separate configuration file that's located at `src/mediaQueries.js` for making responsive breakpoints media-templates :
+
+    ```JS
+    import { css } from 'styled-components'
+
+    export const BREAKPOINTS = {
+      mobile: 576,
+      tablet: 768,
+      desktop: 992,
+      giant: 1200
+    }
+
+    // iterate through the sizes and create a media template
+    const mediaqueries = Object.keys(BREAKPOINTS).reduce((accumulator, label) => {
+      const size = BREAKPOINTS[label]
+      accumulator[label] = (...args) => css`
+        @media (max-width: ${size}px) {
+          ${css(...args)};
+        }
+      `
+      return accumulator
+    }, {})
+
+    export default mediaqueries
+    ```	
+
+    Usage Example :
+
+    ```javascript	
+    const Container = styled.div`
+      ${media.desktop`padding: 0 20px;`}	
+      ${media.tablet`padding: 0 10px;`}	
+      ${media.phone`padding: 0 5px;`}	
+    `	
+    ```
+
+  - If somehow you need to slightly change some other component styling for making a new one. Do not duplicate the style properties for that. To easily make a new component that inherits the styling of another, you should just wrap it in the styled() constructor. 
+  
+    Here is the code sample showing creation of a `TomatoButton` component that's extending with some color-related styling :
+
+    ```JS
+    // The Button Component
+    const Button = styled.button`
+    color: palevioletred;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border: 2px solid palevioletred;
+    border-radius: 3px;
+    `;
+
+    // A new component based on Button, but with some override styles
+    const TomatoButton = styled(Button)`
+    color: tomato;
+    border-color: tomato;
+    `;
+
+    render(
+      <div>
+        <Button>Normal Button</Button>
+        <TomatoButton>Tomato Button</TomatoButton>
+      </div>
+    );
+    ```
+
 
 ## Git & Github
 
