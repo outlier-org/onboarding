@@ -236,12 +236,6 @@ The second is a daily standup that is filled out individually by each engineer.
 
 It is important to be approving and rejecting PRs throughout the week. If you have not approved or rejected PRs on your daily Standuply Report, please provide a short explanation stating the reason why in both approved **and** rejected sections of the report.
 
-`Note:` Be sure to provide a link to each PR / issue you reviewed or worked on. Each PR should be formatted to display the commit type, project name, description, repository name issue number, and link to the appropriate PR / issue on ZenHub.
-
-*example:*
-
->PR-1: [`<commitType>`(`<projectName>`): `<pullRequestDescription>` (`<repositoryName>` `<issueNumber>`)] (<Link to PR/ issue>)
-
 ### Daily Standup Questions 3 & 4:
 #### Specific and Measurable Responses
 
