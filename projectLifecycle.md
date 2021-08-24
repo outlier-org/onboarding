@@ -26,6 +26,7 @@ If a ticket is classified as a Project, the following steps take place:
 
 4. Follow the [Workflow](./gitAndGitHub.md#workflow) process to complete the Project.
 
+5. [Documentation](./projectDocumentation.md) must be added or updated in the repository for this Project's code. If a project spans multiple repositories (e.g. `outlier-api` and `calculus-staic`), relevant documentation should be added to both. 
 
 ### Additional Notes
 * Tickets marked with the label `Urgent` bypass this process and should be worked on immediately.
