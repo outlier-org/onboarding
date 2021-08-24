@@ -22,7 +22,7 @@ If a ticket is classified as a Project, the following steps take place:
 > 
 > **RTD**: *Estimated Ready To Deploy date*
 > 
-> **Document**: *(optional) Link to document(s) (such as Google Docs, PDF, etc.) planning document showing estimation and other information, if applicable*
+> **Document**: *Link to planning document(s) (such as Google Docs, PDF, etc.) implementation options considered, reason for choice, estimation and other information, if applicable*
 
 4. Follow the [Workflow](./gitAndGitHub.md#workflow) process to complete the Project.
 
