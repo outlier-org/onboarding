@@ -16,6 +16,8 @@ Please use the links below to view all of Outlier's Engineering Standards:
 
 [Project Lifecycle](./projectLifecycle.md)
 
+[Documentation](./projectDocumentation.md)
+
 [Git & GitHub](./gitAndGitHub.md)
 
 [Slack & PRs](./slackAndPRs.md)
