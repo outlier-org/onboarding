@@ -14,6 +14,8 @@ Please use the links below to view all of Outlier's Engineering Standards:
 
 [Code Best Practices](./codeStandards.md)
 
+[Project Lifecycle](./projectLifecycle.md)
+
 [Git & GitHub](./gitAndGitHub.md)
 
 [Slack & PRs](./slackAndPRs.md)
