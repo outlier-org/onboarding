@@ -2,14 +2,15 @@
 
 At Outlier, all projects are created as tickets through [Zenhub](https://app.zenhub.com/). However, not all tickets are "projects". There are plenty of one-offs, bug fixes, and small enhancements which need not be classified as a Project.
 
-To be classified as a Project, a ticket must be one or both of the following:
+To be classified as a Project, a ticket must be one or more of the following:
 * An Epic
 * A ticket with the `high impact` label
+* A ticket created by the Product team and assigned to Engineering
 
 If a ticket is classified as a Project, the following steps take place:
 
 1. The Project is assigned to a development team or a developer by the Engineering Manager or Project Manager. 
-2. Responsible developer(s) creates an estimate ([this is a good resource for generating estimations](https://jacobian.org/2021/may/25/my-estimation-technique/)) of the work involved. The creation of this estimate will usually have a deadline assigned by the Engineering Manager or Project Manager, but should usually be done as soon as is pracitcal given other work priorities.
+2. Assigned developer(s) creates an estimate ([this is a good resource for generating estimations](https://jacobian.org/2021/may/25/my-estimation-technique/)) of the work involved. The creation of this estimate will usually have a deadline assigned by the Engineering Manager or Project Manager, but should usually be done as soon as is pracitcal given other work priorities.
 3. Developer(s) post the estimate to the `#engineering-projects` channel using the following format:
 
 > **Project**: *Project name linked to Zenhub URL*
