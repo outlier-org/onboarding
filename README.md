@@ -18,6 +18,8 @@ Please use the links below to view all of Outlier's Engineering Standards:
 
 [Documentation](./projectDocumentation.md)
 
+[Developer Testing Requirements](./developerTesting.md)
+
 [Git & GitHub](./gitAndGitHub.md)
 
 [Slack & PRs](./slackAndPRs.md)
