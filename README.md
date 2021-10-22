@@ -25,3 +25,5 @@ Please use the links below to view all of Outlier's Engineering Standards:
 [Slack & PRs](./slackAndPRs.md)
 
 [Standuply Reports](./standuplyReports.md)
+
+[Outlier 101 (terms, definitions, etc)](/outlier101.md)
