@@ -32,7 +32,7 @@ If a ticket is classified as a Project, the following steps take place:
 ### Planning Document
 In order to facilitate proper forethought and planning in a project, a planning document should contain the following, at a minimum:
 * Introduction which identifies the problem/task to be solved, along with relevant context.
-* Presentation of at least three engineering approaches to solve the problem/task. If there are not at least three approaches which are technically feasible, an explanation for this should be provided.
+* Presentation of at least three engineering approaches to solve the problem/task.
 * After the presentation of each approach, the pros and cons of each approach should be listed so the approaches can be compared.
 * A summary in which the chosen approach is identified, along with a logical explanation for its selection.
 * Any other relevant information explaining the estimate or project details.
