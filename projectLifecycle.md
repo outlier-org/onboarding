@@ -23,11 +23,19 @@ If a ticket is classified as a Project, the following steps take place:
 > 
 > **RTD**: *Estimated Ready To Deploy date*
 > 
-> **Document**: *Link to planning document(s) (such as Google Docs, PDF, etc.) implementation options considered, reason for choice, estimation and other information, if applicable*
+> **Document**: *Link to [planning document(s)](./projectLifecycle.md#planning-document) (such as Google Docs, PDF, etc.) implementation options considered, reason for choice, estimation and other information, if applicable*
 
 4. Follow the [Workflow](./gitAndGitHub.md#workflow) process to complete the Project.
 
 5. [Documentation](./projectDocumentation.md) must be added or updated in the repository for this Project's code. If a project spans multiple repositories (e.g. `outlier-api` and `calculus-staic`), relevant documentation should be added to both. 
+
+### Planning Document
+In order to facilitate proper forethought and planning in a project, a planning document should contain the following, at a minimum:
+* Introduction which identifies the problem/task to be solved, along with relevant context.
+* Presentation of at least three engineering approaches to solve the problem/task. If there are not at least three approaches which are technically feasible, an explanation for this should be provided.
+* After the presentation of each approach, the pros and cons of each approach should be listed so the approaches can be compared.
+* A summary in which the chosen approach is identified, along with a logical explanation for its selection.
+* Any other relevant information explaining the estimate or project details.
 
 ### Additional Notes
 * Tickets marked with the label `Urgent` bypass this process and should be worked on immediately.
