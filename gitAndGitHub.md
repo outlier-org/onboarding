@@ -24,6 +24,12 @@ All PRs must be reviewed by a teammate before they are eligible to be merged int
 
 * The exception to the above single commit rule is when a PR introduces new packages. Create one extra commit in the same PR for each new package your PR needs.
 
+* To keep review simple and reduce complexity, A PR may not include modifications to more than 10 files. Exceptions this file count include:
+  * New components
+  * Test files
+  * Icons or image files
+  * Constants files
+
 * Do not modify a project's `.gitignore` to add files related to your editor or environment. Use your own [global .gitignore](https://stackoverflow.com/questions/7335420/global-git-ignore/22885996#22885996) for that instead.
 
 * Be sure that your PRs have descriptive titles that explain what has been changed. Typically the commit message is sufficient. "Fixes #66" is not.
