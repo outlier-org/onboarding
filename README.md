@@ -27,3 +27,5 @@ Please use the links below to view all of Outlier's Engineering Standards:
 [Standuply Reports](./standuplyReports.md)
 
 [Outlier 101 (terms, definitions, etc)](/outlier101.md)
+
+[Reference for code refactoring](./refactoring.md)
