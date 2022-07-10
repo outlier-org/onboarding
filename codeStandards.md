@@ -35,6 +35,20 @@ Line length should be limited to 80 characters.
 * Variable names should be self-descriptive, it shouldn't need a comment for additional documentation.
 * Booleans should have a prefix like is, has, or are to help engineers with identifying booleans easier, e.g `isVisible` instead of `visible`.
 
+### Test Driven Development
+
+* We use Test Driven Development (TDD) while adding/updating any code.
+* TDD is an approach where you write tests first, then use those tests to drive the design and development of the application.
+* TDD approach shines especially for pure functions and the code should include detailed tests for such functions.
+* The full test coverage is expected for pure functions, but are not necessarily mandatory for UI elements such as HTML or CSS.
+* A good rule is to move all the pure functions to `utils` files or folders, including tests for those functions.
+* There are three steps to follow while writing code in TDD, also known as [Red-Green-Refactor](http://www.jamesshore.com/v2/blog/2005/red-green-refactor). The steps are:
+  1. Create a unit test that fails.
+  2. Write production code that makes that test pass.
+  3. Refactor/Clean up the code (make sure the test still passes).
+* Repeat these steps for each small change in code until the goals the code change are complete.
+* The above steps mean, by definition, that there should be no section of code that isn't tested.
+
 ### Responsive Web Design Standards
 
 * Use styled-components throughout the project for making RWD.
