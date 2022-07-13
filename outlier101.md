@@ -25,6 +25,7 @@
 - **BQ**: Big Query
 - **PG**: PostgreSQL
 - **AD**: Admin Dashboard
+- **PD**: Partnership Dashboard
 - **WGC**: Writing Grade Center
 - **GCS**: Google Cloud Storage
 - **LMS**: Learning Management System - our course website like https://dashboard.outlier.org/, https://calculus.outlier.org/
