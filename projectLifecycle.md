@@ -29,6 +29,11 @@ If a ticket is classified as a Project, the following steps take place:
 
 5. [Documentation](./projectDocumentation.md) must be added or updated in the repository for this Project's code. If a project spans multiple repositories (e.g. `outlier-api` and `calculus-staic`), relevant documentation should be added to both. 
 
+### Updating Project Thread
+This is an important part of working on a project. Once you make a project post in #engineering-projects, never edit it. Any updates to the hours and RTD should be posted in the project’s thread. Copy the original post, make your modifications in that and paste it as reply to the same thread. Also include an explanation for the update.
+
+The project thread not only contains updates to hours and RTD, but also things that happened that were meaningful to the project. For example, any change in requirement, any blocker that is resolved, and so on. Make sure that a project thread is never empty.
+
 ### Planning Document
 In order to facilitate proper forethought and planning in a project, a planning document should contain the following, at a minimum:
 * Introduction which identifies the problem/task to be solved, along with relevant context.
