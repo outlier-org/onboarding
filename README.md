@@ -29,3 +29,5 @@ Please use the links below to view all of Outlier's Engineering Standards:
 [Outlier 101 (terms, definitions, etc)](/outlier101.md)
 
 [Reference for code refactoring](./refactoring.md)
+
+[FE Bug Solving Checklist](./FE-Bug-Solving-Checklist.md)
