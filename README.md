@@ -20,6 +20,8 @@ Please use the links below to view all of Outlier's Engineering Standards:
 
 [Developer Testing Requirements](./developerTesting.md)
 
+[QA Testing Requirements](./qaChecklist.md)
+
 [Git & GitHub](./gitAndGitHub.md)
 
 [Slack & PRs](./slackAndPRs.md)
