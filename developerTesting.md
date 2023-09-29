@@ -33,3 +33,4 @@ Prior to submitting a PR for review and QA, a developer is required to test thei
 - [ ] PR changes are working as expected.
 - [ ] If work in PR is high-impact, staging should be used to test real use-cases
 - [ ] When tests include the new Date() or any date functionality. Test this with different time zones to prevent a test failing on the master branch for other developer
+- [ ] All staging PRs that affect production data require a developer review that is not in #engineering-group-1.
