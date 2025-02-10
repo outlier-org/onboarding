@@ -33,7 +33,9 @@ Line length should be limited to 80 characters.
 * Favor descriptive over concise names, e.g `findUserById` instead of `findUser`.
 * Use consistent names per concept. In a project, function names should be like `getUsers`, `getQuestions` and `getCourses` instead of `getUsers`, `retrieveQuestions` and `returnCourses`.
 * Variable names should be self-descriptive, it shouldn't need a comment for additional documentation.
-* Booleans should have a prefix like is, has, or are to help engineers with identifying booleans easier, e.g `isVisible` instead of `visible`.
+  * Booleans should have a prefix like is, has, or are to help engineers with identifying booleans easier, e.g `isVisible` instead of `visible`.
+  * Functions should start with verbs to be more descriptive, e.g.  `mapOrgDataToRelationship` instead of `orgToRelationshipData`
+  * Database column names should be lowercase and in snake case [source](https://dev.to/ovid/database-naming-standards-2061).
 
 ### Test Driven Development
 
