@@ -34,6 +34,7 @@ Line length should be limited to 80 characters.
 * Use consistent names per concept. In a project, function names should be like `getUsers`, `getQuestions` and `getCourses` instead of `getUsers`, `retrieveQuestions` and `returnCourses`.
 * Variable names should be self-descriptive, it shouldn't need a comment for additional documentation.
 * Booleans should have a prefix like is, has, or are to help engineers with identifying booleans easier, e.g `isVisible` instead of `visible`.
+* Functions should start with verbs to be more descriptive, e.g.  `mapOrgDataToRelationship` instead of `orgToRelationshipData`
 
 ### Test Driven Development
 
