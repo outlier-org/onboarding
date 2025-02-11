@@ -6,7 +6,7 @@ Some developers feel the need to debate code style. Other engineers will use the
 
 We use the [JavaScript Standard Style](https://standardjs.com/) in our code. This is the style used by npm, GitHub, Zeit, MongoDB, Express, Electron, and many others. Be sure to use an automatic formatter like [standard-formatter](https://atom.io/packages/standard-formatter) for Atom and [vscode-standardjs](https://marketplace.visualstudio.com/items/chenxsan.vscode-standardjs) for Visual Studio Code.
 
-Line length should be limited to 80 characters.
+Line length should be limited to 120 characters.
 
 ### Code Principles
 
