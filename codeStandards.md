@@ -6,7 +6,12 @@ Some developers feel the need to debate code style. Other engineers will use the
 
 We use the [JavaScript Standard Style](https://standardjs.com/) in our code. This is the style used by npm, GitHub, Zeit, MongoDB, Express, Electron, and many others. Be sure to use an automatic formatter like [standard-formatter](https://atom.io/packages/standard-formatter) for Atom and [vscode-standardjs](https://marketplace.visualstudio.com/items/chenxsan.vscode-standardjs) for Visual Studio Code.
 
-Line length should be limited to 120 characters.
+Line length should be limited to **120 characters**. 
+Exceptions:
+- Comments after the code do not count in the character count.
+  - A comment after the code are more readable. Putting a comment on the same line signifies that comment only applies to this one line. This way the comment doesn't bloat the actual function.
+- Test case headings can go over 120 character.
+  - It's easier to read test case headings on a single line and they have a tendency to go over the line length.
 
 ### Code Principles
 
